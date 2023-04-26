@@ -1,0 +1,23 @@
+- Technologies used:
++ Backend: Fastapi(python)
++ Frontend (ReactTS + Vite)
++ Database: MongoDB Atlas (integrated AWS)
++ Operation: Docker
+
+- To operate this project there can be 2 cases:
+
+1. Case 1: Do not use docker commands
+   + Backend: execute command "uvicorn main:app" in terminal of folder      	"Backend"
+   + Frontend: execute command "npm run dev" in terminal of folder 	"Frontend"
+
+2. Case 2: Use docker commands 
+   + Backend: 
+	+ Step 1: execute command "docker build -t <name-app> ." in terminal of folder "Backend"
+	+ Step 2: 
++ Step 2: execute command "docker run -d -p 8000:8000 <name-app>" in terminal of folder "Backend"
+   + Frontend: 
+	+ Step 1: execute command "docker build -t <name-app> ." in terminal of folder "Frontend"
+	+ Step 2: execute command "docker run -d -p 5173:5173 <name-app>" in terminal of folder "Frontend"
+
+- Notes:
+Website still has many errors. Through the implementation, I have learned and learned a lot of useful knowledge about the backend (using Fastapi) and docker, I hope to be able to improve as well as learn more useful knowledge and the opportunity to become a part of member of the company.
